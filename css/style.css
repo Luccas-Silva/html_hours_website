@@ -47,7 +47,7 @@ body {
     box-shadow: 15px 25px 25px rgba(0, 0, 0, 0.50);
 }
 
-.time .card {
+.time div {
     height: 20rem;
     width: 20rem;
 
@@ -70,4 +70,21 @@ body {
 
 .time span.tempo {
     font-size: 2rem;
+}
+
+@media (max-width: 850px) {
+    .time {
+        width: 50rem;
+    }
+    div .card-seg {
+        display: none;
+    }
+}
+
+@media (max-width: 550px) {
+    .time {
+        height: 50rem;
+        width: 30rem;
+        flex-direction: column;
+    }
 }
