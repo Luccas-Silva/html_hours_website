@@ -21,11 +21,45 @@ body {
     background: linear-gradient(135deg, rgba(255,165,0,1) 0%, rgba(255,15,123,1) 100%);
 
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 
     color: #ffffff;
     font-size: 2rem;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    
+    margin-top: 2rem;
+}
+
+nav a {
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    margin: 0rem 3rem;
+
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+nav i {
+    font-size: 5rem;
 }
 
 .time {
